@@ -75,39 +75,57 @@ chmod +x autorecon-gwshot.sh
 ```text
 [*] Checking prerequisites...
 [+] Prerequisites OK
-[*] Running AutoRecon against 192.168.1.10...
+[*] Running AutoRecon against 192.168.0.150...
 [+] AutoRecon finished
-[*] Checking connectivity: http://192.168.1.10:80
+[*] Checking connectivity: http://192.168.0.150:80
 [+] http://192.168.1.10:80 is up (HTTP 200)
-[*] Running gobuster against http://192.168.1.10:80...
-[+] Gobuster finished: gobuster_http_192.168.1.10_80.txt
-[+] Discovered 7 paths for http://192.168.1.10:80
-[*] Checking connectivity: https://192.168.1.10:443
-[+] https://192.168.1.10:443 is up (HTTP 200)
-[*] Running gobuster against https://192.168.1.10:443...
-[+] Discovered 4 paths for https://192.168.1.10:443
+[*] Running gobuster against http://192.168.0.150:80...
+[+] Gobuster finished: gobuster_http_192.168.0.150_80.txt
+[+] Discovered 7 paths for http://192.168.0.150:80
+[*] Checking connectivity: https://192.168.0.150:443
+[+] https://192.168.0.150:443 is up (HTTP 200)
+[*] Running gobuster against https://192.168.0.150:443...
+[+] Discovered 4 paths for https://192.168.0.150:443
 [*] First 20 lines of screenshot-urls.txt (verify before screenshotting):
-http://192.168.1.10:80
-http://192.168.1.10:80/admin
-http://192.168.1.10:80/login
-http://192.168.1.10:80/robots.txt
-https://192.168.1.10:443
-https://192.168.1.10:443/admin
+http://192.168.0.150:80
+http://192.168.1.0.150/admin
+http://192.168.1.0.150/login
+http://192.168.1.0.150/robots.txt
+https://192.168.0.150:443
+https://192.168.1.0.150/admin
 [*] Running gowitness via gwshot...
 [+] Done. Screenshots in: results/192.168.1.10/screenshots
 ```
+## 📸 Visual Results
+
+Here is what the tool produces during a real run against a target.
+
+### Discovered Paths
+The script automatically parses Gobuster output into a clean report:
+
+![Gobuster Results](https://github.com/ITSNB14/autorecon-gwshot/blob/main/sample-gobuster.png?raw=true)
+
+### Automated Screenshots
+Every discovered URL is captured instantly using Gowitness:
+
+![Screenshots Folder](https://github.com/ITSNB14/autorecon-gwshot/blob/main/sample-screenshots-folder.png?raw=true)
+
+### Captured Page Example
+Gowitness captured the `/db` endpoint automatically:
+
+![Captured Page](https://github.com/ITSNB14/autorecon-gwshot/blob/main/sample-phpliteadmin-db.png?raw=true)
 
 **Sample `gobuster-results.txt`:**
 ```text
 ========================================
-Base URL: http://192.168.1.10:80
+Base URL: http://192.168.0.150:80
 ========================================
 /robots.txt (Status: 200)
 /admin (Status: 301)
 /login (Status: 200)
 
 ========================================
-Base URL: https://192.168.1.10:443
+Base URL: https://192.168.0.150:443
 ========================================
 /admin (Status: 403)
 ```
@@ -115,7 +133,7 @@ Base URL: https://192.168.1.10:443
 **Output structure:**
 ```
 results/
-└── 192.168.1.10/
+└── 192.168.0.150/
     ├── screenshot-urls.txt      # Clean, deduplicated list of URLs for Gowitness
     ├── gobuster-results.txt     # Structured directory findings, grouped by base URL
     ├── screenshots/             # Captured screenshots of every discovered endpoint
