@@ -62,13 +62,13 @@ git clone https://github.com/ITSNB14/ITSNB14.git
 cd ITSNB14
 chmod +x autorecon-gwshot.sh
 # Set up ~/bin/gwshot first — see docs/setup.md
-./autorecon-gwshot.sh 192.168.1.10
+./autorecon-gwshot.sh 192.168.0.150
 ```
 
 ## Usage Example
 
 ```bash
-./autorecon-gwshot.sh 192.168.1.10
+./autorecon-gwshot.sh 192.168.0.150
 ```
 
 **Sample terminal output:**
