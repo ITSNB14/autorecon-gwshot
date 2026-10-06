@@ -33,7 +33,7 @@ echo -e "${GREEN}[+] Prerequisites OK${NC}"
 mkdir -p "$BASE"
 
 echo -e "${RED}[*] Running AutoRecon against $target...${NC}"
-autorecon "$target" -o "$BASE"
+autorecon --max-scans 5 "$target" -o "$BASE"
 echo -e "${GREEN}[+] AutoRecon finished${NC}"
 
 > "$URL_FILE"
