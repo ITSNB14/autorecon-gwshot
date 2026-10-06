@@ -1,10 +1,14 @@
 # Pentest Screenshot Automation
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Shell](https://img.shields.io/badge/Shell-Bash-blue.svg)](https://www.gnu.org/software/bash/)
-[![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)]()
+[![GitHub stars](https://img.shields.io/github/stars/ITSNB14/autorecon-gwshot?style=social)](https://github.com/ITSNB14/autorecon-gwshot/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/ITSNB14/autorecon-gwshot?style=social)](https://github.com/ITSNB14/autorecon-gwshot/network/members)
+[![License: MIT](https://img.shields.io/github/license/ITSNB14/autorecon-gwshot)](https://opensource.org/licenses/MIT)
+[![Top language](https://img.shields.io/github/languages/top/ITSNB14/autorecon-gwshot)](https://www.gnu.org/software/bash/)
+[![Last commit](https://img.shields.io/github/last-commit/ITSNB14/autorecon-gwshot)](https://github.com/ITSNB14/autorecon-gwshot/commits/main)
 
-An automated reconnaissance pipeline that chains **AutoRecon**, **Gobuster**, and **Gowitness** to streamline web enumeration and visual verification during penetration tests.
+**Topics:** `pentest` `recon` `automation` `gowitness` `gobuster` `autorecon` `bash` `security-tooling` `kali-linux` `parrot-os` `penetration-testing` `web-enumeration` `screenshot-automation`
+
+An automated reconnaissance pipeline that chains **AutoRecon**, **Gobuster**, and **Gowitness** to streamline web enumeration and visual verification during penetration tests..
 
 ## The Problem
 
