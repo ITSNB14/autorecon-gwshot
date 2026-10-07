@@ -1,5 +1,4 @@
 # Pentest Screenshot Automation
-![autorecon-gwshot](https://github.com/ITSNB14/autorecon-gwshot/blob/main/autorecon-gwshot.gif?raw=true)
 
 [![GitHub stars](https://img.shields.io/github/stars/ITSNB14/autorecon-gwshot?style=social)](https://github.com/ITSNB14/autorecon-gwshot/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/ITSNB14/autorecon-gwshot?style=social)](https://github.com/ITSNB14/autorecon-gwshot/network/members)
@@ -8,6 +7,8 @@
 [![Last commit](https://img.shields.io/github/last-commit/ITSNB14/autorecon-gwshot)](https://github.com/ITSNB14/autorecon-gwshot/commits/main)
 
 **Topics:** `pentest` `recon` `automation` `gowitness` `gobuster` `autorecon` `bash` `security-tooling` `kali-linux` `parrot-os` `penetration-testing` `web-enumeration` `screenshot-automation`
+
+![autorecon-gwshot](https://github.com/ITSNB14/autorecon-gwshot/blob/main/autorecon-gwshot.gif?raw=true)
 
 An automated reconnaissance pipeline that chains **AutoRecon**, **Gobuster**, and **Gowitness** to streamline web enumeration and visual verification during penetration tests..
 
