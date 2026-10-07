@@ -1,4 +1,5 @@
 # Pentest Screenshot Automation
+![autorecon-gwshot](https://github.com/ITSNB14/autorecon-gwshot/blob/main/autorecon-gwshot.gif?raw=true)
 
 [![GitHub stars](https://img.shields.io/github/stars/ITSNB14/autorecon-gwshot?style=social)](https://github.com/ITSNB14/autorecon-gwshot/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/ITSNB14/autorecon-gwshot?style=social)](https://github.com/ITSNB14/autorecon-gwshot/network/members)
@@ -13,6 +14,13 @@ An automated reconnaissance pipeline that chains **AutoRecon**, **Gobuster**, an
 ## The Problem
 
 Standard recon tools don't talk to each other. AutoRecon's Markdown reports aren't structured for easy URL extraction, Gobuster's default status-code blacklist silently breaks naive `-s` filtering, and manually screenshotting every discovered endpoint across a target list is slow and error-prone. This script automates the full chain — scan, enumerate, extract, and screenshot — and handles the specific failure modes each tool hits in practice (expired certs, driver timeouts, malformed URLs).
+
+## Demo
+
+Watch the full 11-minute walkthrough of the tool running end-to-end — from prerequisites check through AutoRecon, Gobuster, and Gowitness to the final screenshot results.
+
+
+[![asciinema](https://asciinema.org/a/EqDU3I0kfNWJpjcY.svg)](https://asciinema.org/a/EqDU3I0kfNWJpjcY)
 
 ## Features
 
